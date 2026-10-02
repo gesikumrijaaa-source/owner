@@ -25,6 +25,11 @@ Struttura del repository e come usarla.
 ## Stato
 
 - Piattaforma del corso: https://platform.impossibleuniversity.it/library
-- Accesso automatico dalla sessione: non ancora disponibile (dominio bloccato dalla
-  policy di rete e libreria dietro login).
+- Accesso dalle sessioni cloud: **non possibile**. Verificato il 2026-10-02: anche con la
+  rete dell'ambiente aperta, il sito risponde con un blocco Cloudflare ("Sorry, you have
+  been blocked", errore 1020) a qualsiasi richiesta proveniente dai server cloud, prima
+  ancora del login. Non ha senso riprovare dal cloud.
+- Strada da usare: una sessione **Local** dell'app desktop di Claude, sul PC dell'utente,
+  con il browser dell'utente già autenticato sulla piattaforma. Il materiale esportato
+  va poi committato in `raw/` e pushato, così le sessioni cloud possono processarlo.
 - Lezioni processate: 0.
