@@ -13,6 +13,7 @@ Struttura del repository e come usarla.
 | `playbook/` | Guide operative derivate dal corso: strategia, copy, video. |
 | `business/profilo.md` | Il mio business: offerta, clienti, posizionamento, tono, obiettivi. |
 | `business/decisioni/` | Registro delle decisioni strategiche prese con la base di conoscenza. |
+| `business/consulenza-marketing/` | Il questionario di raccolta dati compilato per la consulenza marketing e ads (versione riordinata, in Word e Markdown): la fotografia più completa del business a ottobre 2026. |
 
 ## Come entra il materiale
 
