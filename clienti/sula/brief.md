@@ -23,5 +23,12 @@ Il sito in costruzione è in `sito/` (struttura e grafica pronte, testi ancora d
 - Mancano dati legali (ragione sociale, NIPT), spedizioni, IVA, orari, mappa.
 - Ordine minimo di 12 bottiglie indicato solo nel modulo.
 
+## Nuovo brand: cosa ha detto l'utente (2026-11-24)
+- Vende olio d'oliva a tutti i livelli: grandi aziende (anche tonnellate, sfuso) e piccoli clienti
+  a cui servono poche bottiglie da esposizione.
+- Deve essere chiaro che il produttore è Sula Olive Oil (Albania).
+- Punta al mercato internazionale: sito in inglese.
+- I dettagli del brand sono in un documento del cliente, non ancora arrivato in sessione.
+
 ## Da chiedere sul nuovo brand
 Vedi l'elenco di domande nella conversazione del 2026-11-24 (nome, posizionamento, mercato, lingue, vendita online, materiali).
