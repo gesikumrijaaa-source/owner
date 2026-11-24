@@ -111,3 +111,38 @@ if (form) {
   qty.addEventListener('input', update);
   update();
 }
+
+// Hero photo slideshow
+const slides = [...document.querySelectorAll('.hero__bg img')];
+if (slides.length > 1 && !reduce) {
+  let cur = 0;
+  setInterval(() => {
+    slides[cur].classList.remove('is-active');
+    cur = (cur + 1) % slides.length;
+    slides[cur].classList.add('is-active');
+  }, 7000);
+}
+
+// Photo cards drift with the pointer; photo band moves with scroll
+if (!reduce) {
+  const hero = document.querySelector('.hero');
+  const cards = [...document.querySelectorAll('.pcard')];
+  if (hero && cards.length && matchMedia('(pointer: fine)').matches) {
+    hero.addEventListener('pointermove', e => {
+      const r = hero.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+      cards.forEach(c => { const d = +c.dataset.depth; c.style.transform = `translate3d(${x * d}px, ${y * d}px, 0)`; });
+    });
+  }
+  const band = document.querySelector('.band'), bandImg = document.querySelector('.band__img');
+  if (band && bandImg) {
+    const move = () => {
+      const r = band.getBoundingClientRect();
+      if (r.bottom > 0 && r.top < innerHeight) {
+        const p = (r.top + r.height / 2 - innerHeight / 2) / innerHeight;
+        bandImg.style.transform = `translate3d(0, ${p * -60}px, 0)`;
+      }
+    };
+    addEventListener('scroll', move, { passive: true }); move();
+  }
+}

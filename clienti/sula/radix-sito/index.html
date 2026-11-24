@@ -42,6 +42,12 @@
 <main>
   <!-- HERO -->
   <section class="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <img class="is-active" src="assets/hero-grove.webp" alt="" width="1600" height="900" fetchpriority="high">
+      <img src="assets/hero-olives.webp" alt="" width="1600" height="900">
+      <img src="assets/hero-mill.webp" alt="" width="1600" height="900">
+    </div>
+    <div class="hero__veil" aria-hidden="true"></div>
     <div class="wrap hero__grid">
       <div class="hero__text">
         <p class="eyebrow">Extra Virgin Olive Oil · Product of Albania</p>
@@ -59,6 +65,8 @@
       </div>
       <div class="hero__stage">
         <div class="stage__oval" aria-hidden="true"></div>
+        <figure class="pcard pcard--a" data-depth="18"><img src="assets/photo-grove.webp" alt="Olive harvest in a Sulova grove" width="640" height="800"><figcaption>Harvest · Sulova</figcaption></figure>
+        <figure class="pcard pcard--b" data-depth="-14"><img src="assets/photo-oil.webp" alt="Fresh olive oil flowing at the Sula mill" width="640" height="800"><figcaption>Cold extracted · &lt;27°C</figcaption></figure>
         <div class="tin-wrap" role="img" aria-label="Radix 5 litre tin of extra virgin olive oil, turning slowly">
           <div class="tin" id="tin">
             <div class="tin__face tin__front"><img src="assets/tin-front.webp" alt="" width="520" height="1110"></div>
@@ -73,7 +81,7 @@
         <p class="stage__hint" aria-hidden="true">Drag to turn</p>
       </div>
     </div>
-    <img class="hero__land" src="assets/landscape.webp" alt="" aria-hidden="true" width="1536" height="1024">
+    <a class="hero__scroll" href="#origin" aria-label="Scroll to discover"><span></span>Scroll</a>
   </section>
 
   <!-- MARQUEE -->
@@ -98,6 +106,15 @@
         <p>Our olives are selected in the Sulova region of central Albania, a land of rolling hills and old olive groves, and harvested by local farmers who know every tree. They go straight to our own mill, where they are cold-extracted by mechanical means only.</p>
         <p class="signature">Pure, honest, unmistakably Mediterranean.</p>
       </div>
+    </div>
+  </section>
+
+  <!-- PHOTO BAND -->
+  <section class="band" aria-label="Sulova olives">
+    <img class="band__img" src="assets/band-olives.webp" alt="Freshly harvested olives from the Sulova region" width="1800" height="800" loading="lazy">
+    <div class="wrap band__inner">
+      <p class="band__kicker">Sulova · Albania</p>
+      <p class="band__line">Every drop,<br><em>traced back to its roots.</em></p>
     </div>
   </section>
 
@@ -388,6 +405,8 @@
     </div>
   </section>
 </main>
+
+<div class="closing" aria-hidden="true"><img src="assets/landscape.webp" alt="" width="1536" height="1024" loading="lazy"></div>
 
 <footer class="footer">
   <div class="wrap footer__inner">
