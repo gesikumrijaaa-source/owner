@@ -54,3 +54,12 @@ Anteprima privata: https://claude.ai/artifact/9TxxR4xFnYShXwDA8xK22M
 - Il sito deve spiegare la qualità anche a chi non è esperto.
 - Solo inglese. Sito statico su Netlify. Dominio ed email Radix da scegliere più avanti.
 - Obiettivo del sito: vetrina che scorre bene, incuriosisce e porta a chiamare, scrivere o chiedere un'offerta.
+
+## Materiale ricevuto e scelte (2026-11-24, sera)
+- Foto del cliente salvate in `raw/foto-cliente/`: uliveto con reti, olive sul ramo, olive nella tramoggia.
+  Usate nell'apertura (con versioni per telefono), nella fascia con il video e nel passo "Selected olives".
+- Video del cliente in `raw/`. Dal primo si usano solo i primi 2 secondi, ripuliti dai bicchieri del caffè
+  e dai fori neri della griglia (richiesta dell'utente). Il secondo, più pulito, sta nell'arco dorato.
+- Rimossa la tabella "Nutrition declaration" su richiesta dell'utente. Restano i dati sul 73 g / 80% di grassi monoinsaturi.
+- Richiesta dell'utente: sito non troppo complesso, premium e professionale, che scorra bene e sia leggero.
+  Per questo: niente sezioni nuove, effetti pesanti tolti (grana, sfocatura del menu, parallasse), font ospitati sul sito.

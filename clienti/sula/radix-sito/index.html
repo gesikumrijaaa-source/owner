@@ -1,19 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Radix | Premium Extra Virgin Olive Oil from Albania</title>
-  <meta name="description" content="Radix is a premium cold-extracted extra virgin olive oil from the Sulova region of Albania, produced by Sula Olive Oil. Every format, any volume, no minimum order, shipped worldwide.">
+  <meta name="description" content="Premium cold-extracted extra virgin olive oil from Sulova, Albania, made by Sula Olive Oil. Every format, any volume, no minimum order, shipped worldwide.">
   <meta name="theme-color" content="#10160a">
   <meta property="og:title" content="Radix | Premium Extra Virgin Olive Oil from Albania">
   <meta property="og:description" content="Cold-extracted extra virgin olive oil from Sulova, Albania. From a single display bottle to bulk by the ton, shipped worldwide.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/cormorant-garamond.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/jost.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Product","name":"Radix Premium Extra Virgin Olive Oil","brand":{"@type":"Brand","name":"Radix"},
@@ -35,7 +35,7 @@
       <a href="#faq">FAQ</a>
       <a href="#contact" class="btn btn--gold btn--small">Request a quote</a>
     </nav>
-    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    <button type="button" class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
   </div>
 </header>
 
@@ -43,9 +43,9 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero__bg" aria-hidden="true">
-      <img class="is-active" src="assets/hero-grove.webp" alt="" width="1600" height="900" fetchpriority="high">
-      <img src="assets/hero-olives.webp" alt="" width="1600" height="900">
-      <img src="assets/hero-mill.webp" alt="" width="1600" height="900">
+      <picture><source media="(max-width: 900px)" srcset="assets/hero-branch-m.webp"><img class="is-active" src="assets/hero-branch.webp" alt="" width="1600" height="900" fetchpriority="high"></picture>
+      <picture><source media="(max-width: 900px)" data-srcset="assets/hero-harvest-m.webp"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/hero-harvest.webp" alt="" width="1600" height="900"></picture>
+      <picture><source media="(max-width: 900px)" data-srcset="assets/hero-mill-m.webp"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/hero-mill.webp" alt="" width="1600" height="900"></picture>
     </div>
     <div class="hero__veil" aria-hidden="true"></div>
     <div class="wrap hero__grid">
@@ -67,10 +67,10 @@
         <div class="stage__oval" aria-hidden="true"></div>
         <div class="tin-wrap" role="img" aria-label="Radix 5 litre tin of extra virgin olive oil, turning slowly">
           <div class="tin" id="tin">
-            <div class="tin__face tin__front"><img src="assets/tin-front.webp" alt="" width="520" height="1110"></div>
-            <div class="tin__face tin__right"><img src="assets/tin-right.webp" alt="" width="300" height="1110"></div>
-            <div class="tin__face tin__back"><img src="assets/tin-back.webp" alt="" width="520" height="1110"></div>
-            <div class="tin__face tin__left"><img src="assets/tin-left.webp" alt="" width="300" height="1110"></div>
+            <div class="tin__face tin__front"><img src="assets/tin-front.webp" srcset="assets/tin-front-sm.webp 390w, assets/tin-front.webp 520w" sizes="(max-width: 560px) 140px, (max-width: 900px) 190px, 250px" alt="" width="520" height="1110"></div>
+            <div class="tin__face tin__right"><img src="assets/tin-right.webp" srcset="assets/tin-right-sm.webp 225w, assets/tin-right.webp 300w" sizes="(max-width: 560px) 82px, (max-width: 900px) 111px, 146px" alt="" width="300" height="1110"></div>
+            <div class="tin__face tin__back"><img src="assets/tin-back.webp" srcset="assets/tin-back-sm.webp 390w, assets/tin-back.webp 520w" sizes="(max-width: 560px) 140px, (max-width: 900px) 190px, 250px" alt="" width="520" height="1110"></div>
+            <div class="tin__face tin__left"><img src="assets/tin-left.webp" srcset="assets/tin-left-sm.webp 225w, assets/tin-left.webp 300w" sizes="(max-width: 560px) 82px, (max-width: 900px) 111px, 146px" alt="" width="300" height="1110"></div>
             <div class="tin__face tin__top"><span class="tin__cap"></span></div>
             <div class="tin__face tin__bottom"></div>
           </div>
@@ -83,7 +83,7 @@
   </section>
 
   <!-- MARQUEE -->
-  <div class="strip" aria-label="Key facts">
+  <div class="strip">
     <div class="strip__track">
       <ul class="strip__list"><li>Cold extracted</li><li>Mechanical extraction only</li><li>Single origin: Sulova, Albania</li><li>No minimum order</li><li>Worldwide shipping</li><li>Direct from the mill</li></ul>
       <ul class="strip__list" aria-hidden="true"><li>Cold extracted</li><li>Mechanical extraction only</li><li>Single origin: Sulova, Albania</li><li>No minimum order</li><li>Worldwide shipping</li><li>Direct from the mill</li></ul>
@@ -94,14 +94,14 @@
   <section class="section section--cream" id="origin">
     <div class="wrap split">
       <div class="origin__media">
-        <img src="assets/tree.webp" alt="Engraved olive tree with its roots visible" width="900" height="866" loading="lazy">
+        <img src="assets/tree.webp" alt="Engraved olive tree with its roots visible" width="720" height="693" loading="lazy">
         <span class="origin__word" aria-hidden="true">radix</span>
       </div>
       <div>
         <p class="eyebrow">Our origin</p>
         <h2>Radix means <em>root</em>.</h2>
         <p>Great olive oil starts below the surface: in the soil, the climate and the people who tend the trees. Radix takes its name from the Latin word for root, because every drop can be traced back to where it began.</p>
-        <p>Our olives are selected in the Sulova region of central Albania, a land of rolling hills and old olive groves, and harvested by local farmers who know every tree. They go straight to our own mill, where they are cold-extracted by mechanical means only.</p>
+        <p>Our olives are selected in the Sulova region of central Albania, a land of rolling hills and olive groves, and harvested by local farmers. They go straight to our own mill, where they are cold-extracted by mechanical means only.</p>
         <p class="signature">Pure, honest, unmistakably Mediterranean.</p>
       </div>
     </div>
@@ -109,15 +109,15 @@
 
   <!-- PHOTO BAND -->
   <section class="band" aria-label="Sulova olives">
-    <img class="band__img" src="assets/band-olives.webp" alt="Freshly harvested olives from the Sulova region" width="1800" height="800" loading="lazy">
+    <img class="band__img" src="assets/band-olives.webp" alt="Freshly harvested olives at the mill" width="1600" height="711" loading="lazy">
     <div class="wrap band__inner">
       <div>
         <p class="band__kicker">Sulova · Albania</p>
         <p class="band__line">Every drop,<br><em>traced back to its roots.</em></p>
-        <p class="band__text">Fresh from the decanter at our mill: green, bright and full of aroma. This is Radix the moment it is made.</p>
+        <p class="band__text">Fresh from the extraction line at our mill: green, bright and full of aroma. This is Radix the moment it is made.</p>
       </div>
       <figure class="band__arch">
-        <video class="band__video" src="assets/oil-pour.mp4" poster="assets/oil-pour-poster.jpg" muted loop playsinline preload="none" data-autoplay aria-label="Fresh Radix olive oil flowing from the extraction line at the Sula mill"></video>
+        <video class="band__video" src="assets/oil-stream.mp4" poster="assets/oil-stream-poster.jpg" muted loop playsinline preload="none" data-autoplay></video>
         <figcaption>Fresh oil at the Sula mill</figcaption>
       </figure>
     </div>
@@ -148,7 +148,7 @@
         </article>
         <article>
           <h3>Cold, so nothing is lost</h3>
-          <p>Heat helps a mill squeeze out more oil, but it burns away aroma and natural nutrients. "Cold extracted" means the oil never goes above <b>27°C</b>. Radix keeps the fresh taste of the olive.</p>
+          <p>Heat helps a mill extract more oil, but it damages the aroma and natural nutrients. "Cold extracted" means the oil never goes above <b>27°C</b>. Radix keeps the fresh taste of the olive.</p>
         </article>
         <article>
           <h3>Fresh olives, our own mill</h3>
@@ -185,19 +185,6 @@
           </div>
           <p class="compare__note">Look for the words "extra virgin" on the label. Bottles that only say "olive oil" belong to a lower category.</p>
         </div>
-        <aside class="nutri" aria-label="Nutrition declaration">
-          <p class="nutri__title">Nutrition declaration <span>per 100 ml</span></p>
-          <dl>
-            <div><dt>Energy</dt><dd>3380 kJ / 822 kcal</dd></div>
-            <div><dt>Total fat</dt><dd>91 g</dd></div>
-            <div class="sub"><dt>of which saturates</dt><dd>13 g</dd></div>
-            <div class="sub"><dt>mono-unsaturates</dt><dd>73 g</dd></div>
-            <div class="sub"><dt>polyunsaturates</dt><dd>5 g</dd></div>
-            <div><dt>Carbohydrate</dt><dd>0 g</dd></div>
-            <div><dt>Fibre · Protein · Salt</dt><dd>0 g</dd></div>
-          </dl>
-          <p class="nutri__note">Store in a cool, dry place away from direct sunlight.</p>
-        </aside>
       </div>
     </div>
   </section>
@@ -210,7 +197,7 @@
         <h2>From one bottle <em>to a full tanker.</em></h2>
         <p>One oil, packed the way your business needs it. Tell us the format and the quantity: we take care of the rest.</p>
       </div>
-      <ol class="scale" aria-label="Available formats from smallest to largest">
+      <ol class="scale">
         <li><svg viewBox="0 0 40 100" aria-hidden="true"><path d="M16 4h8v14c0 4 6 7 6 14v62a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V32c0-7 6-10 6-14z"/><rect x="12" y="50" width="16" height="22" rx="1"/></svg><span>250 ml</span></li>
         <li><svg viewBox="0 0 40 120" aria-hidden="true"><path d="M16 4h8v18c0 5 8 8 8 16v76a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V38c0-8 8-11 8-16z"/><rect x="11" y="60" width="18" height="28" rx="1"/></svg><span>500 ml</span></li>
         <li><svg viewBox="0 0 44 136" aria-hidden="true"><path d="M18 4h8v22c0 5 9 8 9 17v87a2 2 0 0 1-2 2H11a2 2 0 0 1-2-2V43c0-9 9-12 9-17z"/><rect x="12" y="68" width="20" height="32" rx="1"/></svg><span>750 ml</span></li>
@@ -258,17 +245,17 @@
       </div>
       <div class="process__grid">
         <div class="process__media" aria-hidden="true">
-          <img class="is-active" src="assets/photo-grove.webp" alt="" width="640" height="800" loading="lazy">
+          <img class="is-active" src="assets/photo-harvest.webp" alt="" width="640" height="800" loading="lazy">
           <img src="assets/photo-cleaning.webp" alt="" width="640" height="800" loading="lazy">
-          <video src="assets/oil-pour.mp4" poster="assets/oil-pour-poster.jpg" muted loop playsinline preload="none" data-autoplay></video>
+          <video src="assets/oil-curtain.mp4" poster="assets/oil-curtain-poster.jpg" muted loop playsinline preload="none"></video>
           <img src="assets/photo-extraction.webp" alt="" width="640" height="800" loading="lazy">
           <span class="process__count"><b>01</b> / 04</span>
         </div>
         <ol class="process__steps">
-          <li class="is-active"><img src="assets/photo-grove.webp" alt="Olive harvest nets under the trees in a Sulova grove" width="640" height="800" loading="lazy"><h3>Selected olives</h3><p>Fresh olives from selected groves of the Sulova region, harvested by local farmers and delivered straight to our mill.</p></li>
+          <li class="is-active"><img src="assets/photo-harvest.webp" alt="Harvest nets full of olives under the trees" width="640" height="800" loading="lazy"><h3>Selected olives</h3><p>Fresh olives from selected groves of the Sulova region, harvested by local farmers and delivered straight to our mill.</p></li>
           <li><img src="assets/photo-cleaning.webp" alt="Fresh green olives moving through the washing line" width="640" height="800" loading="lazy"><h3>Careful cleaning</h3><p>Every batch is washed and cleaned of leaves and impurities before processing begins.</p></li>
-          <li><video class="step__video" src="assets/oil-pour.mp4" poster="assets/oil-pour-poster.jpg" muted loop playsinline preload="none" data-autoplay aria-label="Fresh olive oil flowing from the extraction line"></video><h3>Cold extraction</h3><p>The oil is obtained directly from the olives, solely by mechanical means and below 27°C, with modern equipment that keeps its flavour and natural nutritional value intact.</p></li>
-          <li><img src="assets/photo-extraction.webp" alt="Stainless steel equipment inside the Sula Olive Oil mill" width="640" height="800" loading="lazy"><h3>Protected storage</h3><p>Stored in sterile tanks at controlled temperatures and sealed in hermetic packaging, so it reaches you as fresh as the day it was made.</p></li>
+          <li><video class="step__video" src="assets/oil-curtain.mp4" poster="assets/oil-curtain-poster.jpg" muted loop playsinline preload="none" data-autoplay aria-hidden="true"></video><h3>Cold extraction</h3><p>The oil is obtained directly from the olives, solely by mechanical means and below 27°C, with modern equipment that keeps its flavour and natural nutritional value intact.</p></li>
+          <li><img src="assets/photo-extraction.webp" alt="Processing equipment inside the Sula Olive Oil mill" width="640" height="800" loading="lazy"><h3>Protected storage</h3><p>Stored in sterile tanks at controlled temperatures and sealed in hermetic packaging, so it reaches you as fresh as the day it was made.</p></li>
         </ol>
       </div>
     </div>
@@ -300,7 +287,7 @@
         <li><strong>Direct from the producer</strong>Competitive pricing with no middlemen.</li>
         <li><strong>No minimum order</strong>From one box to full containers.</li>
         <li><strong>Shipped worldwide</strong>We deliver to every country.</li>
-        <li><strong>A personal contact</strong>One person follows your order from quote to delivery.</li>
+        <li><strong>A direct line</strong>Talk to the producer by phone, WhatsApp or email.</li>
       </ul>
     </div>
   </section>
@@ -310,7 +297,7 @@
     <div class="wrap split">
       <div class="producer__media">
         <img class="producer__mill" src="assets/photo-mill.webp" alt="The Sula Olive Oil mill in Selitë, Elbasan, at dusk" width="1024" height="576" loading="lazy">
-        <img class="producer__olives" src="assets/photo-olives.webp" alt="Freshly harvested olives at the mill" width="640" height="800" loading="lazy">
+        <img class="producer__olives" src="assets/photo-olives.webp" alt="Freshly harvested olives at the mill" width="480" height="600" loading="lazy">
       </div>
       <div>
         <p class="eyebrow">The producer</p>
@@ -340,7 +327,7 @@
 
   <!-- CONTACT + QUOTE BUILDER -->
   <section class="section contact" id="contact">
-    <img class="contact__tree" src="assets/tree.webp" alt="" aria-hidden="true" loading="lazy">
+    <img class="contact__tree" src="assets/tree.webp" alt="" width="720" height="693" loading="lazy">
     <div class="wrap split split--top">
       <div>
         <p class="eyebrow">Request a quote</p>
@@ -348,15 +335,15 @@
         <p>Choose a format, tell us how much you need and where it should go. We reply personally with a tailored offer.</p>
         <!-- TODO: replace email with the Radix address when available -->
         <ul class="contact__list">
-          <li><span>Phone</span><a href="tel:+355695505554">+355 69 550 5554</a></li>
+          <li><span>Phone</span><a href="tel:+355695505554">+355&nbsp;69&nbsp;550&nbsp;5554</a></li>
           <li><span>WhatsApp</span><a href="https://wa.me/355695505554" target="_blank" rel="noopener">Chat with us on WhatsApp</a></li>
           <li><span>Email</span><a href="mailto:info@sulaoliveoil.com">info@sulaoliveoil.com</a></li>
           <li><span>Instagram</span><a href="https://www.instagram.com/sula.oliveoil/" target="_blank" rel="noopener">@sula.oliveoil</a></li>
         </ul>
       </div>
-      <form class="form" id="quote-form" name="quote" method="POST" data-netlify="true" netlify-honeypot="company_website" action="thank-you.html">
+      <form class="form" id="quote-form" name="quote" method="POST" data-netlify="true" netlify-honeypot="company_website" action="/thank-you.html">
         <input type="hidden" name="form-name" value="quote">
-        <p class="hp"><label>Leave this empty <input id="f-hp" name="company_website"></label></p>
+        <p class="hp"><label>Leave this empty <input type="text" id="f-hp" name="company_website"></label></p>
 
         <fieldset class="chips">
           <legend>1. What do you need?</legend>
@@ -373,7 +360,7 @@
           <label for="f-quantity">2. How many?</label>
           <div class="qty__row">
             <button type="button" class="qty__btn" data-step="-1" aria-label="Decrease">−</button>
-            <input id="f-quantity" name="quantity" type="number" min="1" step="1" value="120" inputmode="numeric">
+            <input id="f-quantity" name="quantity" type="number" min="0.1" step="any" value="120" inputmode="decimal">
             <span class="qty__unit" id="qty-unit">bottles</span>
             <button type="button" class="qty__btn" data-step="1" aria-label="Increase">+</button>
           </div>
@@ -383,15 +370,15 @@
 
         <p class="form__step">3. Your details</p>
         <div class="form__row">
-          <label>Full name*<input id="f-name" name="name" required autocomplete="name"></label>
-          <label>Company<input id="f-company" name="company" autocomplete="organization"></label>
+          <label>Full name*<input type="text" id="f-name" name="name" required autocomplete="name"></label>
+          <label>Company<input type="text" id="f-company" name="company" autocomplete="organization"></label>
         </div>
         <div class="form__row">
           <label>Email*<input id="f-email" type="email" name="email" required autocomplete="email"></label>
           <label>Phone / WhatsApp<input id="f-phone" type="tel" name="phone" autocomplete="tel"></label>
         </div>
         <div class="form__row">
-          <label>Delivery country*<input id="f-country" name="country" required autocomplete="country-name"></label>
+          <label>Delivery country*<input type="text" id="f-country" name="country" required autocomplete="country-name"></label>
           <label>You are
             <select id="f-business_type" name="business_type">
               <option>Importer / distributor</option>
