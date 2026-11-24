@@ -1,7 +1,8 @@
 # Cliente: Sula Olive Oil (nuovo brand in sviluppo)
 
 Il cliente ha già un sito (https://sulaoliveoil.com/) e sta creando un **nuovo brand** che avrà un sito nuovo.
-Il sito in costruzione è in `sito/` (struttura e grafica pronte, testi ancora da agenzia: vanno riscritti).
+Il sito Radix è in `clienti/sula/radix-sito/` (istruzioni nel README della cartella).
+Anteprima privata: https://claude.ai/artifact/9TxxR4xFnYShXwDA8xK22M
 
 ## Cosa sappiamo dal sito attuale (letto il 2026-11-24)
 - Frantoio/fabbrica moderna a Selitë, Elbasan (Albania). Telefono e WhatsApp +355 69 550 5554.
@@ -45,5 +46,11 @@ Il sito in costruzione è in `sito/` (struttura e grafica pronte, testi ancora d
   Titoli in serif elegante maiuscolo, logo "Radix" in serif morbido con ramo d'ulivo.
 - Non indicati: varietà di olive, acidità, annata, certificazioni, prezzi.
 
-## Da chiedere sul nuovo brand
-Vedi l'elenco di domande nella conversazione del 2026-11-24 (nome, posizionamento, mercato, lingue, vendita online, materiali).
+## Scelte confermate dall'utente (2026-11-24)
+- Tutti i formati possibili: bottiglie da esposizione, latte da 5 L, sfuso a tonnellate, formati su richiesta.
+- Nessun prezzo sul sito: solo "Request a quote". Nessun ordine minimo. Spedizione in tutto il mondo.
+- Nessun limite di tonnellate.
+- Dati tecnici: solo quelli del vecchio sito e dell'etichetta, presentando l'olio come premium.
+- Il sito deve spiegare la qualità anche a chi non è esperto.
+- Solo inglese. Sito statico su Netlify. Dominio ed email Radix da scegliere più avanti.
+- Obiettivo del sito: vetrina che scorre bene, incuriosisce e porta a chiamare, scrivere o chiedere un'offerta.
