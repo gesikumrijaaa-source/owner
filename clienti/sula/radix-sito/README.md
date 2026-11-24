@@ -7,7 +7,7 @@ Sito vetrina statico in inglese. Nessun prezzo: tutto porta a "Request a quote",
 - `style.css`: grafica. I colori sono definiti in cima al file (`:root`).
 - `main.js`: menu da telefono, piccole animazioni.
 - `privacy.html`, `thank-you.html`: privacy e pagina dopo l'invio del modulo.
-- `assets/`: logo, ulivo, rametto e paesaggio estratti dall'etichetta (`raw/radix-etichetta-5L.pdf`),
+- `assets/`: logo, ulivo, rametto, paesaggio e le 4 facce della latta 3D (`tin-*.webp`) estratti dall'etichetta (`raw/radix-etichetta-5L.pdf`),
   foto del frantoio prese dal sito sulaoliveoil.com.
 
 ## Pubblicare su Netlify (circa 5 minuti)
