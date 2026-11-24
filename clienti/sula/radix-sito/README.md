@@ -12,7 +12,6 @@ Sito vetrina statico in inglese. Nessun prezzo: tutto porta a "Request a quote",
   - foto dell'apertura (`hero-*.webp`, con versione `-m` per telefono) e della fascia, dalle foto del cliente in `raw/foto-cliente/`;
   - foto del frantoio prese dal sito sulaoliveoil.com;
   - `oil-stream.mp4`: secondo video del cliente, rallentato e in loop continuo;
-  - `oil-curtain.mp4`: primi 2 secondi del primo video, stabilizzati, senza bicchieri e senza i fori neri della griglia;
   - `fonts/`: caratteri ospitati sul sito (licenza SIL OFL inclusa), nessuna richiesta a Google.
 
 ## Leggerezza

@@ -58,8 +58,8 @@ Anteprima privata: https://claude.ai/artifact/9TxxR4xFnYShXwDA8xK22M
 ## Materiale ricevuto e scelte (2026-11-24, sera)
 - Foto del cliente salvate in `raw/foto-cliente/`: uliveto con reti, olive sul ramo, olive nella tramoggia.
   Usate nell'apertura (con versioni per telefono), nella fascia con il video e nel passo "Selected olives".
-- Video del cliente in `raw/`. Dal primo si usano solo i primi 2 secondi, ripuliti dai bicchieri del caffè
-  e dai fori neri della griglia (richiesta dell'utente). Il secondo, più pulito, sta nell'arco dorato.
+- Video del cliente in `raw/`. Il primo (bicchieri del caffè e griglia) è stato tolto dal sito su richiesta
+  dell'utente: nel processo ci sono ora le foto dei macchinari e della sala del frantoio. Il secondo sta nell'arco dorato.
 - Rimossa la tabella "Nutrition declaration" su richiesta dell'utente. Restano i dati sul 73 g / 80% di grassi monoinsaturi.
 - Richiesta dell'utente: sito non troppo complesso, premium e professionale, che scorra bene e sia leggero.
   Per questo: niente sezioni nuove, effetti pesanti tolti (grana, sfocatura del menu, parallasse), font ospitati sul sito.
