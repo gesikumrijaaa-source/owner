@@ -65,8 +65,6 @@
       </div>
       <div class="hero__stage">
         <div class="stage__oval" aria-hidden="true"></div>
-        <figure class="pcard pcard--a" data-depth="18"><img src="assets/photo-grove.webp" alt="Olive harvest in a Sulova grove" width="640" height="800"><figcaption>Harvest · Sulova</figcaption></figure>
-        <figure class="pcard pcard--b" data-depth="-14"><img src="assets/photo-oil.webp" alt="Fresh olive oil flowing at the Sula mill" width="640" height="800"><figcaption>Cold extracted · &lt;27°C</figcaption></figure>
         <div class="tin-wrap" role="img" aria-label="Radix 5 litre tin of extra virgin olive oil, turning slowly">
           <div class="tin" id="tin">
             <div class="tin__face tin__front"><img src="assets/tin-front.webp" alt="" width="520" height="1110"></div>
@@ -113,8 +111,15 @@
   <section class="band" aria-label="Sulova olives">
     <img class="band__img" src="assets/band-olives.webp" alt="Freshly harvested olives from the Sulova region" width="1800" height="800" loading="lazy">
     <div class="wrap band__inner">
-      <p class="band__kicker">Sulova · Albania</p>
-      <p class="band__line">Every drop,<br><em>traced back to its roots.</em></p>
+      <div>
+        <p class="band__kicker">Sulova · Albania</p>
+        <p class="band__line">Every drop,<br><em>traced back to its roots.</em></p>
+        <p class="band__text">Fresh from the decanter at our mill: green, bright and full of aroma. This is Radix the moment it is made.</p>
+      </div>
+      <figure class="band__arch">
+        <video class="band__video" src="assets/oil-pour.mp4" poster="assets/oil-pour-poster.jpg" muted loop playsinline preload="none" data-autoplay aria-label="Fresh Radix olive oil flowing from the extraction line at the Sula mill"></video>
+        <figcaption>Fresh oil at the Sula mill</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -255,15 +260,15 @@
         <div class="process__media" aria-hidden="true">
           <img class="is-active" src="assets/photo-grove.webp" alt="" width="640" height="800" loading="lazy">
           <img src="assets/photo-cleaning.webp" alt="" width="640" height="800" loading="lazy">
+          <video src="assets/oil-pour.mp4" poster="assets/oil-pour-poster.jpg" muted loop playsinline preload="none" data-autoplay></video>
           <img src="assets/photo-extraction.webp" alt="" width="640" height="800" loading="lazy">
-          <img src="assets/photo-oil.webp" alt="" width="640" height="800" loading="lazy">
           <span class="process__count"><b>01</b> / 04</span>
         </div>
         <ol class="process__steps">
           <li class="is-active"><img src="assets/photo-grove.webp" alt="Olive harvest nets under the trees in a Sulova grove" width="640" height="800" loading="lazy"><h3>Selected olives</h3><p>Fresh olives from selected groves of the Sulova region, harvested by local farmers and delivered straight to our mill.</p></li>
           <li><img src="assets/photo-cleaning.webp" alt="Fresh green olives moving through the washing line" width="640" height="800" loading="lazy"><h3>Careful cleaning</h3><p>Every batch is washed and cleaned of leaves and impurities before processing begins.</p></li>
-          <li><img src="assets/photo-extraction.webp" alt="Extraction machinery inside the Sula Olive Oil mill" width="640" height="800" loading="lazy"><h3>Cold extraction</h3><p>The oil is obtained directly from the olives, solely by mechanical means and below 27°C, with modern equipment that keeps its flavour and natural nutritional value intact.</p></li>
-          <li><img src="assets/photo-oil.webp" alt="Freshly extracted olive oil flowing at the mill" width="640" height="800" loading="lazy"><h3>Protected storage</h3><p>Stored in sterile tanks at controlled temperatures and sealed in hermetic packaging, so it reaches you as fresh as the day it was made.</p></li>
+          <li><video class="step__video" src="assets/oil-pour.mp4" poster="assets/oil-pour-poster.jpg" muted loop playsinline preload="none" data-autoplay aria-label="Fresh olive oil flowing from the extraction line"></video><h3>Cold extraction</h3><p>The oil is obtained directly from the olives, solely by mechanical means and below 27°C, with modern equipment that keeps its flavour and natural nutritional value intact.</p></li>
+          <li><img src="assets/photo-extraction.webp" alt="Stainless steel equipment inside the Sula Olive Oil mill" width="640" height="800" loading="lazy"><h3>Protected storage</h3><p>Stored in sterile tanks at controlled temperatures and sealed in hermetic packaging, so it reaches you as fresh as the day it was made.</p></li>
         </ol>
       </div>
     </div>

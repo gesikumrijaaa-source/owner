@@ -61,7 +61,7 @@ if (!reduce && 'IntersectionObserver' in window) {
     .forEach(el => { if (below(el)) { el.classList.add('lift', 'pending'); io.observe(el); } });
 }
 const steps = [...document.querySelectorAll('.process__steps li')];
-const shots = [...document.querySelectorAll('.process__media img')];
+const shots = [...document.querySelectorAll('.process__media > img, .process__media > video')];
 const count = document.querySelector('.process__count b');
 if (steps.length && 'IntersectionObserver' in window) {
   const so = new IntersectionObserver(entries => entries.forEach(e => {
@@ -123,17 +123,8 @@ if (slides.length > 1 && !reduce) {
   }, 7000);
 }
 
-// Photo cards drift with the pointer; photo band moves with scroll
+// Photo band moves with scroll
 if (!reduce) {
-  const hero = document.querySelector('.hero');
-  const cards = [...document.querySelectorAll('.pcard')];
-  if (hero && cards.length && matchMedia('(pointer: fine)').matches) {
-    hero.addEventListener('pointermove', e => {
-      const r = hero.getBoundingClientRect();
-      const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
-      cards.forEach(c => { const d = +c.dataset.depth; c.style.transform = `translate3d(${x * d}px, ${y * d}px, 0)`; });
-    });
-  }
   const band = document.querySelector('.band'), bandImg = document.querySelector('.band__img');
   if (band && bandImg) {
     const move = () => {
@@ -145,4 +136,14 @@ if (!reduce) {
     };
     addEventListener('scroll', move, { passive: true }); move();
   }
+}
+
+// Videos play only while on screen (muted, looping, no data used until needed)
+const vids = [...document.querySelectorAll('video[data-autoplay]')];
+if ('IntersectionObserver' in window) {
+  const vo = new IntersectionObserver(entries => entries.forEach(e => {
+    const v = e.target;
+    if (e.isIntersecting && !reduce) { v.preload = 'auto'; v.play().catch(() => {}); } else v.pause();
+  }), { rootMargin: '200px 0px' });
+  vids.forEach(v => vo.observe(v));
 }
