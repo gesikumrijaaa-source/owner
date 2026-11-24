@@ -1,19 +1,4 @@
+# Used when the site is connected to the Git repository. Headers live in _headers.
+# Netlify revalidates files on every deploy, so unversioned asset names get no long cache.
 [build]
   publish = "."
-
-# Netlify already revalidates files on every deploy, so no long-lived cache headers on
-# unversioned asset names (they would keep old images in browsers for a year).
-
-[[headers]]
-  for = "/assets/fonts/*"
-  [headers.values]
-    Cache-Control = "public, max-age=2592000"
-    Access-Control-Allow-Origin = "*"
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Content-Type-Options = "nosniff"
-    X-Frame-Options = "SAMEORIGIN"
-    Referrer-Policy = "strict-origin-when-cross-origin"
-    Permissions-Policy = "camera=(), microphone=(), geolocation=()"

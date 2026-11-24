@@ -19,14 +19,16 @@ Sito vetrina statico in inglese. Nessun prezzo: tutto porta a "Request a quote",
 - Le animazioni dell'apertura si fermano quando l'apertura esce dallo schermo. I video partono solo quando sono visibili.
 - Controllo Lighthouse (telefono): accessibilità, buone pratiche e SEO 100.
 
-## Pubblicare su Netlify (circa 5 minuti)
-1. Accedi a https://app.netlify.com e scegli "Add new site", poi "Deploy manually".
-2. Trascina la cartella `radix-sito` nella pagina.
-3. In "Site configuration", poi "Forms", attiva il rilevamento dei moduli e ripubblica: il modulo "quote" compare da solo.
-4. In "Forms", poi "Form notifications", aggiungi una notifica email verso l'indirizzo che deve ricevere le richieste.
-5. Quando il dominio è comprato: "Domain management", poi "Add a domain".
+## Pubblicare su Netlify a mano
+1. Comprimi questa cartella senza `README.md` e `netlify.toml` (oppure usa lo zip già pronto), poi decomprimila.
+2. Apri https://app.netlify.com/drop e trascina la cartella `radix-sito` nel riquadro.
+3. Rinomina il sito: Site configuration, poi Change site name (es. `radix-oliveoil` diventa radix-oliveoil.netlify.app).
+4. Modulo: Site configuration, poi Forms, poi Enable form detection. Poi ricarica la cartella da Deploys
+   (trascinandola di nuovo), così Netlify registra il modulo "quote".
+5. Notifiche: Forms, poi Form notifications, poi Add notification, poi Email, con l'indirizzo che deve ricevere le richieste.
+6. Dominio, quando c'è: Domain management, poi Add a domain.
 
-In alternativa si collega il repository GitHub a Netlify, con cartella di pubblicazione `clienti/sula/radix-sito`.
+Per gli aggiornamenti successivi: Deploys, poi trascina di nuovo la cartella aggiornata.
 
 ## Da completare prima di andare online
 - [ ] Email Radix: sostituire `info@sulaoliveoil.com` in `index.html` (sezione contatti) e in `privacy.html`.
