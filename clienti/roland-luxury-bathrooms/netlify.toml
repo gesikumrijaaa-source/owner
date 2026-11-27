@@ -1,0 +1,4 @@
+# If Netlify is connected to the repository: Base directory = clienti/roland-luxury-bathrooms
+# With Netlify Drop: drag only the "site" folder. Headers and redirects live in site/_headers and site/_redirects.
+[build]
+  publish = "site"
