@@ -34,4 +34,4 @@ Il piano gratuito di Netlify Forms copre 100 richieste al mese.
 python3 -I strumenti/reel.py foto-originali site/video landscape
 python3 -I strumenti/reel.py foto-originali site/video portrait
 ```
-Poi ricrea i WebM con ffmpeg (`libvpx-vp9`, crf 38).
+Poi ricomprimi gli MP4 a crf 26 e crea i WebM con ffmpeg (`libvpx-vp9`, crf 36). Il video usa solo foto "dopo" e galleria, mai i "prima".
